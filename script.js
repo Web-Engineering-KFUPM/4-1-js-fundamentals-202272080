@@ -7,6 +7,10 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 // Task 2.1 — declare & reassign
 // Create let course = "CIS101"; display it usinng console.log(course), reassign to "CIS102"; display it again.
 // write code here
+let course ="CIS101";
+console.log(course);
+let course ="CIS102";
+console.log(course);
 
 
 // Task 2.2 — const safety
@@ -14,22 +18,29 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 // NOTE: For now, keep the reassignment line commented so the file runs without errors.
 // const SCHOOL = "MyCollege";
 // SCHOOL = "OtherCollege"; // <-- Uncomment to see the error, then re-comment after testing
-
+const SCHOOL="MyCollege";
+// const SCHOOL="dtg"
 
 // ==========================
 // TODO-3: ARITHMETIC & TYPES
 // ==========================
 
 // Task 3.1 — arithmetic basics
-// Given let x = 8, y = 3; log x+y, x-y, x*y, x/y, x%y.
+// Given let x = 8, y = 3; log x+y, x-y, x*y, x/y, x*y.
 // write code here
-
-
+x=8;
+y=8;
+log(x+y);
+x-y;
+x*y;
+x/y;
 // Task 3.2 — number vs string
 // Display results of "2" + 3, 2 + "3", and 2 + 3. Add a short comment: why do the first two concatenate?
 // write code here
-
-
+console.log("2" + 3);  
+console.log(2 + "3");
+console.log(2 + 3);
+//the first two the + is like a conecter that convert the whole thing to string and stick them together 
 // Read chapter 4 in zyBooks: Compound Assignment Operators
 
 
@@ -45,8 +56,14 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 //         - "Young" if age is between 13 and 35
 //         - "Aged" if age > 35
 // write code here
-
-
+let age = prompt("Enter your age:");
+if (age<13) {
+  console.log("child")
+} else if (13<age<35) {
+  console.log("Young")
+} else {
+  console.log("aged")
+}
 // Task 4.2 — Switch statement
 // Create a variable let day = "Mon".
 //       Use a switch statement to check the value of day.
@@ -54,7 +71,30 @@ console.log("%cJS Lab Connected — Start completing the TODOs!", "font-weight:b
 //         - If it is "Sat" or "Sun", log "weekend".
 //         - For any other value, log "unknown".
 // write code here
+let day="mon"
+switch (day) {
+  case "mon":
+   console.log("weekday")
+    break;
+  case "tue":
+    console.log("weekday")
+    break;
+    case "wed":
+    console.log("weekday")
+    break;case "thu":
+    console.log("weekday")
+    break;case "fri":
+    console.log("weekday")
+    break;
+      case "sat":
+   console.log("weekend")
+    break;  case "sun":
+   console.log("weekend")
+    break;
 
+  default:
+    console.log("unknown")
+}
 // Read Chapter 4 in zyBooks: Conditional (ternary) operator
 
 // ===============
