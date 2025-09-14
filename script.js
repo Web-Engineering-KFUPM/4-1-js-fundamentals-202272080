@@ -104,13 +104,23 @@ switch (day) {
 // Task 5.1 — for loop sum
 // TODO: Sum integers 1..10 with a for loop; display the result of total sum.
 // write code here
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+
+console.log(sum);
 
 
 // Task 5.2 — while loop
 // let t = 3; while(t > 0), decrement the value t variable in each iteration and display the result.
 // write code here
-
-
+let t=3 
+while (t>0) {
+  t=t-1
+  console.log(t)
+}
 // Read Chapter 4 in zyBooks: Do-While Loop
 // write code here
 
